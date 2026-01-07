@@ -13,6 +13,8 @@ return [
     |
     */
 
+    'admin_email' => env('ADMIN_EMAIL', 'admin@example.com'),
+
     'default' => env('MAIL_MAILER', 'smtp'),
 
     /*
@@ -130,5 +132,17 @@ return [
             resource_path('views/vendor/mail'),
         ],
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Admin Email
+    |--------------------------------------------------------------------------
+    |
+    | This is the email address that will receive administrative notifications
+    | such as low stock alerts and daily sales reports.
+    |
+    */
+
+    'admin_email' => env('ADMIN_EMAIL', 'admin@example.com'),
 
 ];
